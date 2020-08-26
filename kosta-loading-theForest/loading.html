@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/background.css">
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/musicbuttons.css">
+<link href="css/cursor.css" media="all" rel="stylesheet" type="text/css">
+<style>
+@font-face {
+  font-family: ConcertOne;
+  src: url(webfonts/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: IndieFlower;
+  src: url(webfonts/IndieFlower-Regular.ttf);
+}
+</style>
+</head>
+<body>
+<!-- CURSOR -->
+<svg id="cursor" width="20" height="20">
+      <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f2c061"></stop>
+          <stop offset="100%" stop-color="#da1b60"></stop>                    <!-- LEAVE cursor SECTION AS IT IS OR YOU WILL BE CATAPULTED INTO ANOTHER DIMENSION-->
+        </linearGradient>
+      </defs>
+      <circle r="07" cx="10" cy="10" fill="none"></circle>
+      <line x1="0" y1="0" x2="20" y2="20"></line>
+      <line x1="0" y1="20" x2="20" y2="0"></line>
+</svg>
+<!-- /CURSOR\ -->
+
+<!-- MAIN MENU -->
+<div class="container">
+ <h1>
+    <a href="#menu"<!-- LOGO -->
+	<div id="background" class="clip"></div>
+	<div id="clip3" class="clip"></div>
+	<div id="clip4" class="clip"></div>
+	<div id="clipa" class="clip"></div>
+	<div id="clip1" class="clip"></div>
+	<div id="clip2" class="clip"></div>
+	<div id="clipb" class="clip"></div>
+	<!-- /LOGO\ --></a>
+ </h1>
+    
+<div class="popover" id="menu">
+ <div class = 'content'>
+  <a href="#" class="close"></a>
+   <div class = 'nav'>
+    <ul class = 'nav_list'>
+      
+      <div class = 'nav_list_item'>
+	  <li><a href="#">Created by Nick</a></li>
+      </div>
+     <div class = 'nav_list_item'>
+		<li><a href="#">Created by Nick</a></li>
+      </div>
+    <div class = 'nav_list_item'>
+	  <li><a href="#">Created by Nick</a></li>
+      </div>
+    <div class = 'nav_list_item'>
+	  <li><a href="#">Created by Nick</a></li>
+      </div>
+     <div class = 'nav_list_item'>
+		<li><a href="#music">Music</a></li>
+      </div>
+      
+	</ul>
+  </div>
+ </div>
+</div>
+</div>
+<!-- /MAIN MENU\ -->
+
+<!-- MUSIC MENU -->
+	<div class="popover" id="music">
+	 <div class = 'content'>
+	  <a href="#" class="close"></a>
+	   <div class = 'nav'>
+		<ul class = 'nav_list'>
+		 
+		<div class = 'nav_list_item'>
+			<li>
+				<div id="btn" onclick="playAudio()"><span class="noselect">Play</span>
+				  <div id="circle"></div>
+				</div>
+			</li>
+		</div>
+		<div class = 'nav_list_item'>
+			<li>
+				<div id="btn" onclick="pauseAudio()"><span class="noselect">Pause</span>
+				  <div id="circle"></div>
+				</div>
+			</li>
+		</div>
+		<div class = 'nav_list_item'>
+			<li><a href="#menu" style="font-size:20px;">*fun fact if you press "space" you can play/pause music*</a></li>
+		</div>
+		  
+		</ul>
+	  </div>
+	 </div>
+	</div>
+	</div>
+<!-- /MUSIC MENU\ -->
+
+<!-- BACKGROUND -->
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<!-- /BACKGROUND\ -->
+
+<!-- MUSIC -->
+<audio id="leson" src="audio.mp3" autoplay="true" hidden="true" loop="true"/>
+<script>
+var play = false;
+var myAudio = document.getElementById("leson");
+    
+myAudio.volume = 0.1;
+
+function onKeyDown(event) {
+  switch (event.keyCode) {
+    case 32: //SpaceBar                    
+      if (play) {
+        myAudio.pause();
+        play = false;
+      } else {
+        myAudio.play();
+        play = true;
+      }
+    break;
+    }
+      return false;
+    }
+
+function playAudio() { 
+  myAudio.play(); 
+} 
+
+function pauseAudio() { 
+  myAudio.pause(); 
+} 
+
+window.addEventListener("keydown", onKeyDown, false);
+</script>
+<!-- /MUSIC\ -->
+
+
+<!-- CURSOR -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/plugins.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<!-- /CURSOR\ -->
+</body>
+</html>

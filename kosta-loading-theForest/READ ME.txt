@@ -1,0 +1,15 @@
+IF YOU TRY TO SELL IT FUCK YOU!
+
+Customs:
+1. Change Font:
+	kosta_loading-theForest> css > menu.css > change line 12 and 51
+2. Change Logo:
+	kosta_loading-theForest> css > logo.css > upload logo to https://imgur.com and replace link in line 34
+
+IF YOU NEED TO CHANGE ANYTHING ALSE, FEEL FREE TO DM ME ON DISCORD: iTz Nick#6641
+
+I KNOW IM STUPIDO BUT I LOVE YOU FOR DOWNLOADING MY SOURCE! AND FUCK YOU! <3
+
+DISCORD SERVER: https://discord.gg/7ATVkrk - JOIN OR I WILL FOUND YOU!
+
+JOIN MY FIVEM SERVER IF IT WILL BE STIL ONLINE: https://invite.gg/sloroyale
